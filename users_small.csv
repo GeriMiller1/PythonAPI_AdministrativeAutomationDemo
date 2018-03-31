@@ -1,0 +1,3 @@
+Firstname,Lastname,email,username,password,role,groups,assigned_state
+Smith,Collins,smith.collins@company.com,smith.collins,COLL@123,org_admin,"Basemaps, Central Services",KS
+Johnson,Stewart,johnson.stewart@company.com,johnson.stewart,STEW@123,org_user,"Basemaps, Central Services",NV
