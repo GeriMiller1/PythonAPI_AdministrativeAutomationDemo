@@ -1,5 +1,4 @@
 from arcgis.gis import GIS
-from IPython.display import display
 import time
 
 print("\n")
@@ -14,16 +13,14 @@ target_password = ""
 target_username = ""
 target_url = ""
 
+source_group_title = ""   # Example: "Transportation Group"
+
 source = GIS(source_url, source_username, source_password)
 target = GIS(target_url, target_username, target_password, verify_cert=False)
-target_admin_username = ''
 
-source_group = source.groups.search("title:Transportation Analysis", outside_org = True)[0]
-source_group
-
+source_group = source.groups.search("title:{0}".format(source_group_title, outside_org = True)[0]
 
 source_items = source_group.content()
-source_items
 
 print("\tCreating target groups...")
 import tempfile
